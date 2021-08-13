@@ -1,0 +1,238 @@
+body{
+    background-color: rgb(8, 7, 7);
+    color: white;
+}
+li{
+  list-style-type: none;
+}
+#profilepic>img{
+  width: 200px;
+  height: 200px;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+#index{          
+  color: blanchedalmond;
+}
+a{
+  text-decoration: none;
+}
+
+#navtab{
+  width: fit-content;
+  margin-left:auto;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: black;
+}
+nav{
+  float: right;
+}
+nav li{
+  display: inline;
+  padding: 15px;  
+}
+nav a{
+  color: darkgrey;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav li:hover a{
+  color: #dfb9b9;
+  text-shadow: 2px 2px 2px #751919b2;
+}
+.sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgb(212, 209, 209);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #1a1717b2;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color:whitesmoke;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav .options{
+  width: 250px;
+}
+#opennav{
+  position: absolute;
+  color: lavender;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  top: 0;
+}
+#extlinks ul{
+  width: max-content;
+}
+#extlinks li{
+  display: inline;
+  padding: 20px 20px 10px;
+  
+}
+#extlinks a{
+  color: white;
+}
+#extlinks a:hover{
+    text-shadow: 1px 1px 1px #dfb9b9;
+}
+#about,#education ul,#skillset>ul,#experience,#project,#experience div{
+  width: fit-content;
+  margin: 0 auto;
+}
+#about{
+  width: 749px;
+  background-color: #dfb9b9;
+  padding: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+#about h1{
+  color: rgba(139, 99, 86, 0.808);
+}
+h2{
+  color: #a87600;
+  text-align: center;
+}
+mark {
+  line-height: 2px;
+  padding: 0px;
+}
+#education h3{
+  font-size: 25px;
+  color: #807b70;
+}
+#education li{
+  font-size: large;
+}
+
+#skillset{
+  margin: 0 auto;
+  background-color: #1f1e1e77;
+  color: #eaececab;
+  padding-bottom: 10px;
+}
+#skillset h3{
+  color: #ffffff;
+  padding-left: 32px;
+}
+#experience div{
+  display: inline-flexbox;
+}
+.subskillset li{
+  display: inline-block;
+  margin-right: 40px;
+}
+#project{
+  margin-left: 32px;
+}
+#project h3{
+  color: rgb(223, 17, 223);
+}
+#project h6{
+  color: #818181;
+}
+.cover{
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+#extlinks i{
+  font-size: 32px;
+}
+@media screen and (min-width:750px) {
+  nav{
+    display: inline-block;
+  }
+  #opennav{
+    display: none;
+  }
+  #skillset{
+    width: 520px;
+  }
+  #about>h1{
+    color: rgb(223, 17, 223);
+    text-shadow: none;
+  }
+  #about{
+    background-color: black;
+    color: #999696;
+    text-shadow: white 1px 1px;
+  }
+  #project{
+    margin: auto;
+  }
+}
+@media screen and (max-width:749.5px){
+  nav{
+    display: none;
+  }
+  #opennav{
+    display: inline-block;
+  }
+  #about,#skillset{
+    width: 100%;
+  }
+  #about{
+    color: black;
+  }
+}
+@media screen and (max-width:749.5) and (min-width:575.5px) {
+  #about,#skillset{
+    width: 100%;
+  }
+}
+@media screen and (max-width:575px) and (min-width:430px) {
+  #about,#skillset{
+    width: 100%;
+  }
+  .mybar,.beginer,.intermediate,.experience,.advance{
+    display: none;
+  } 
+}
+@media screen and (max-width:429.5px) {
+  #about,#skillset{
+    width: 100%;
+  }
+  .mybar,.beginer,.intermediate,.experience,.advance{
+    display: none;
+  }
+  #extlinks i{
+    font-size: 25px;
+  } 
+  #experience,#project{
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
